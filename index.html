@@ -743,6 +743,7 @@ function render(){
       const input = node.querySelector('input');
       input.checked = true;
       state.choice[i] = Number(input.value);
+      document.getElementById('btnCheck').disabled = false;
       // If already checked, keep explanation visible
       if(state.checked[i]) showExplain(i);
       updateHUD();
